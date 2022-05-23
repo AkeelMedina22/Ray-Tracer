@@ -6,7 +6,7 @@ It is a fully functional ray tracer built using C++, following the book Ray Trac
 
 ## Instructions
 
-Command to run: g++ raytracer.cpp world/World.cpp world/ViewPlane.cpp utilities/BBox.cpp utilities/Image.cpp utilities/Point3D.cpp utilities/Vector3D.cpp utilities/Ray.cpp utilities/RGBColor.cpp utilities/ShadeInfo.cpp samplers/Sampler.cpp samplers/Regular.cpp geometry/Geometry.cpp geometry/Plane.cpp geometry/Sphere.cpp geometry/Triangle.cpp cameras/Parallel.cpp cameras/Perspective.cpp materials/Cosine.cpp samplers/Simple.cpp samplers/random.cpp tracer/Basic.cpp tracer/Tracer.cpp materials/Matte.cpp materials/Phong.cpp materials/Reflective.cpp light/Ambient.cpp light/Directional.cpp light/Light.cpp light/Point.cpp light/Spotlight.cpp BRDF/GlossySpecular.cpp BRDF/Lambertian.cpp BRDF/PerfectSpecular.cpp tracer/whitted.cpp acceleration/*.cpp build/buildOBJ.cpp
+Command to run: g++ raytracer.cpp world/World.cpp world/ViewPlane.cpp utilities/BBox.cpp utilities/Image.cpp utilities/Point3D.cpp utilities/Vector3D.cpp utilities/Ray.cpp utilities/RGBColor.cpp utilities/ShadeInfo.cpp samplers/Sampler.cpp samplers/Regular.cpp geometry/Geometry.cpp geometry/Plane.cpp geometry/Sphere.cpp geometry/Triangle.cpp cameras/Parallel.cpp cameras/Perspective.cpp materials/Cosine.cpp samplers/Simple.cpp samplers/random.cpp tracer/Basic.cpp tracer/Tracer.cpp materials/Matte.cpp materials/Phong.cpp materials/Reflective.cpp light/Ambient.cpp light/Directional.cpp light/Light.cpp light/Point.cpp light/Spotlight.cpp BRDF/GlossySpecular.cpp BRDF/Lambertian.cpp BRDF/PerfectSpecular.cpp tracer/whitted.cpp build/reflectiveChapter14.cpp
 
 ## License
 

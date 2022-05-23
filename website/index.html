@@ -1,0 +1,672 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Hanoi Unlock</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+	<!-- <link Khref="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- <script type="text/javascript" src="assets/js/this.js"></script> -->
+
+</head>
+
+<body class="is-preload">
+
+	<header id="header" class="fixed-top">
+		<div class="container d-flex align-items-center">
+			<h1 class=" logo me-auto"><a class="logolink" href="#hero"><span>Hanoi</span>Unlock</a></h1>
+
+			<!-- Navigation Bar -->
+			<nav id="navbar" class="navbar order-last order-lg-0">
+				<!-- <div class="mylinkContainer"> -->
+				<ul>
+
+					<li><a class="nav-link scrollto active" href="#hero">Concept</a></li>
+					<li><a class="nav-link scrollto" href="#scene">Scene</a></li>
+					<li><a class="nav-link scrollto" href="#features">Features</a></li>
+					<li><a class="nav-link scrollto" href="#bonus">Bonus</a></li>
+					<li><a class="nav-link scrollto" href="#acceleration">Acceleration Structures</a></li>
+					<li><a class="nav-link scrollto" href="#portfolio">Renders</a></li>
+					<li><a class="nav-link scrollto" href="#build">Build Files</a></li>
+					<li><a class="nav-link scrollto" href="#team">Team</a></li>
+					<li><a class="nav-link scrollto" href="#credits">Credits</a></li>
+
+				</ul>
+				<!-- </div> -->
+			</nav>
+
+		</div>
+	</header>
+
+
+
+
+
+	<!-- End Header -->
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- Hero -->
+
+
+		<!-- <section>
+
+			<h2 style="color: #918f8f;">Tower of Hanoi</h2>
+			<h6>A Raytraced Concept</h6>
+			<p class="major">The scene symbolizes a rite of passage that every CS student at Habib University have
+				been through, the infamous Tower of Hanoi. What struck us about the problem is how remarkably simple
+				was it to code a solution based on recursion. I might still be able to remember the three lines of
+				pseudocode which were implemented in the Programming Fundamentals course.</p>
+		</section> -->
+
+
+
+		<section class="banner style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="scene">
+			<div class="content">
+				<br>
+
+				<h2 style="color: #918f8f;">Tower of Hanoi</h2>
+				<h6>Blender Version</h6>
+				<p class="major">The scene symbolizes a rite of passage that every CS student at Habib University have
+					been through, the infamous Tower of Hanoi. What struck us about the problem is how remarkably simple
+					was it to code a solution based on recursion. I might still be able to remember the three lines of
+					pseudocode which were implemented in the Programming Fundamentals course.</p>
+			</div>
+			<div class="image">
+				<a href="render_images/Meshes/render1.jpeg" target="_blank">
+					<img border="0" align="center" src="render_images/Meshes/render1.jpeg" />
+				</a>
+			</div>
+		</section>
+
+		<!-- About the Scene -->
+		<section class="banner style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+			id="scene">
+			<div class="content">
+				<h2 style="color: #918f8f;">About the Scene</h2>
+				<p class="major">After visualizing the concept, the scene was modelled in Blender consisting of Blender
+					primitives
+					such as tori and Suzanne (the monkey) while other objects were hand-sculpted from cylinders and
+					circles. There are <b style="color: black;">9.7 million triangles </b> in the scene with many of
+					them being used to better
+					approximate the curved surfaces, including the tori.</p>
+			</div>
+			<div class="image">
+				<a href="render_images/Meshes/hanoi.png" target="_blank">
+					<img border="0" align="center" src="render_images/Meshes/hanoi.png" />
+				</a>
+			</div>
+		</section>
+		<!-- Features -->
+		<section id="features" class="wrapper style1 align-center">
+			<div class="inner">
+				<h2 style="color: #918f8f;">Features List</h2>
+				<p>We implemented the following features in our ray tracer.</p>
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<h3>Lighting</h3>
+						<p>We implemented four different types of light, Ambient Light, Point Light, Directional Light
+							and Spotlight. </p>
+					</section>
+					<section>
+						<h3>Materials</h3>
+						<p>We implemented phong, matte and reflective materials. For perfectly specular
+							materials, the diffuse component is zero, while for perfectly diffuse or matte material, the
+							specular component is zero. A combination of specular and diffuse components produces phong
+							material.</p>
+					</section>
+					<section>
+						<h3>BRDF's</h3>
+						<p>We used the Bi-Directional Reflectance Distribution Function(BRDF's) to compute how light is
+							reflected at surfaces. We implemented Lambertian, Glossy Specular and Perfect Specular.</p>
+					</section>
+					<section>
+						<h3>Shadows</h3>
+						<p>All our implemented light sources support shadows through the concept of secondary ray
+							generation. Shadows can be switched off/on in build functions.</p>
+					</section>
+					<section>
+						<h3>Acceleration Structures</h3>
+						<p>We implemented Oct-Tree as our acceleration structure.</p>
+					</section>
+					<section>
+						<h3>Camera</h3>
+						<p>Both parallel and perspective viewing is supported in our raytracer. </p>
+					</section>
+
+					<section>
+						<h3>Primitives</h3>
+						<p>Our raytracer supports planes, triangles, spheres and boxes as the basic
+							geometric primitives.</p>
+					</section>
+
+					<section>
+						<h3>Anti-Aliasing</h3>
+						<p>For smoothing out edges, we implemented regular and random samplers in our raytracer.
+							Multiple rays are shot per pixel producing a much
+							nicer interpolation in the colors assigned to each pixel. Regular sampling, involves a fixed
+							number of rays for each pixel in our case, 16.
+						</p>
+					</section>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="bonus" class="wrapper style1 align-center">
+			<div class="inner">
+				<h2 style="color: #918f8f;">Bonus Features</h2>
+				<p>A list of implemented bonus functionalities is given below.</p>
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<h3>OBJ Loader</h3>
+						<p>Our ray tracer supports loading scenes as .obj file. A mesh or any scene consisting of
+							multiple meshes can simply be first exported to .obj format through a 3D software and can
+							then simply be loaded into our ray tracer. </p>
+					</section>
+					<section>
+						<h3>Blender Correspondence</h3>
+						<p>We used Blender for modelling and exporting our concept scene.Any scene that can be viewed in
+							Blender can be
+							directly loaded as an .obj in our raytracer. the scene was rotated such that the camera is
+							looking into the positive y direction, this is the view that was rendered in our final
+							raytracer.</p>
+					</section>
+
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+		<section id="acceleration" class="wrapper style1 align-center">
+			<div class="inner">
+				<h2 style="color: #918f8f;">Acceleration Structures For a Scene With Spheres</h2>
+				<p>The following tables compare the render times of our ray tracer with and without acceleration grids.
+					The rendering was done on a hardware with following configurations:</p>
+				<ul align="left">
+					<li>Processor: Ryzen 5 1600 (6c/12t)</li>
+					<li>RAM: 16 GB @3000MHz</li>
+					<li>System Type: 64-bit Operating System - Windows 10</li>
+				</ul>
+				<div class="index align-center">
+					<section>
+						<div class="content">
+							<h4>Comparison Times</h4>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Time With Oct Tree</th>
+											<th>Time Without Oct Tree</th>
+											<th>Number of Primitives (triangles)</th>
+											<th>Resolutions</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Time With Oct Tree</td>
+											<td>Time Without Oct Tree </td>
+											<td>Number of Primitives (triangles)</td>
+											<td>Resolutions</td>
+										</tr>
+										<tr>
+											<td>6.102</td>
+											<td>3.618 </td>
+											<td>10</td>
+											<td>1920 x 1920</td>
+										</tr>
+										<tr>
+											<td>14.896</td>
+											<td>16.542 </td>
+											<td>100</td>
+											<td>1920 x 1920</td>
+										</tr>
+										<tr>
+											<td>49.21</td>
+											<td>173.202 </td>
+											<td>1000</td>
+											<td>1920 x 1920</td>
+										</tr>
+										<tr>
+											<td>550.12</td>
+											<td>2200+ </td>
+											<td>1000</td>
+											<td>1920 x 1920</td>
+										</tr>
+										<tr>
+											<td>0.349</td>
+											<td>0.288 </td>
+											<td>10</td>
+											<td>400 x 400</td>
+										</tr>
+										<tr>
+											<td>0.806</td>
+											<td>1.013 </td>
+											<td>100</td>
+											<td>400 x 400</td>
+										</tr>
+										<tr>
+											<td>3.855</td>
+											<td>7.895 </td>
+											<td>1000</td>
+											<td>400 x 400</td>
+										</tr>
+										<tr>
+											<td>8.042</td>
+											<td>78.332 </td>
+											<td>10000</td>
+											<td>400 x 400</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</section>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- ======= Rendered Images ======= -->
+		<section id="portfolio" class=" portfolio wrapper style1 align-center">
+			<div class="container" data-aos="fade-up">
+
+				<div class="section-title">
+					<h2 style="text-align: center; color: #918f8f;">Rendered Images</h2>
+
+				</div>
+
+				<div class="row" data-aos="fade-up" data-aos-delay="150" id="myBtnContainer">
+					<div class="col-lg-12 d-flex justify-content-center">
+						<ul id="portfolio-flters">
+							<li class="btn active" onclick="filterSelection('all')"> All</li>
+							<li class="btn" onclick="filterSelection('ray-casting')"> Ray-Casting</li>
+							<li class="btn" onclick="filterSelection('lights')"> Lights&Shadows&Materials</li>
+							<li class="btn" onclick="filterSelection('anti-aliasing')"> Anti-Aliasing</li>
+
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+
+					<div class="col-lg-4 col-md-6 portfolio-item filterDiv">
+						<div class="portfolio-wrap">
+							<img src="render_images/Meshes/monkeymesh.png" class="img-fluid" alt="">
+							<div class="portfolio-info">
+								<h4>Monkey Mesh</h4>
+								<div class="portfolio-links">
+									<a href="render_images/Meshes/monkeymesh.png" data-gallery="portfolioGallery"
+										class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/buildMonk.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filterDiv ray-casting ">
+						<div class="portfolio-wrap">
+							<img src="render_images/Tracing_AntiAliasing/Reflective_Whitted_HelloWorld.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-info">
+								<h4>Reflective Material- Whitted Tracing</h4>
+								<div class="portfolio-links">
+									<a href="render_images/Tracing_AntiAliasing/Reflective_Whitted_HelloWorld.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/reflectiveHelloWorld.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filterDiv ray-casting">
+						<div class="portfolio-wrap">
+							<img src="render_images/Tracing_AntiAliasing/Reflective_Whitted_Chapter14.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-info">
+								<h4>Reflective Material- Whitted Tracing</h4>
+								<div class="portfolio-links">
+									<a href="render_images/Tracing_AntiAliasing/Reflective_Whitted_Chapter14.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/reflectiveChapter14.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="col-lg-4 col-md-6 portfolio-item  filterDiv lights ">
+						<div class="portfolio-wrap">
+							<img src="render_images/Lights_Shading_Materials/Directional&Shadows.png" class="img-fluid"
+								alt="">
+							<div class="portfolio-info">
+								<h4>Directional Light - Matte Material - Shadows</h4>
+
+								<div class="portfolio-links">
+									<a href="render_images/Lights_Shading_Materials/Directional&Shadows.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="lights 2 "><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/buildLights_Shadows.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filterDiv lights">
+						<div class="portfolio-wrap">
+							<img src="render_images/Lights_Shading_Materials/AmbientLight.png" class="img-fluid" alt="">
+							<div class="portfolio-info">
+								<h4>Ambient Light</h4>
+
+								<div class="portfolio-links">
+									<a href="render_images/Lights_Shading_Materials/AmbientLight.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="lights 1"><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/buildLights_Shadows.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item  filterDiv lights">
+						<div class="portfolio-wrap">
+							<img src="render_images/Lights_Shading_Materials/PointShadows.png" class="img-fluid" alt="">
+							<div class="portfolio-info">
+								<h4>Point Light - Matte Material - Shadows</h4>
+								<div class="portfolio-links">
+									<a href="render_images/Lights_Shading_Materials/PointShadows.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="lights 3"><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/buildLights_Shadows.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filterDiv lights">
+						<div class="portfolio-wrap">
+							<img src="render_images/Lights_Shading_Materials/Direc_PointShadows.png" class="img-fluid"
+								alt="">
+							<div class="portfolio-info">
+								<h4>Point Light - Directional Light - Matte Material - Shadows</h4>
+								<div class="portfolio-links">
+									<a href="render_images/Lights_Shading_Materials/Direc_PointShadows.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="lights 4"><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/buildLights_Shadows.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filterDiv lights">
+						<div class="portfolio-wrap">
+							<img src="render_images/Lights_Shading_Materials/Phong_Point_Direc.png" class="img-fluid"
+								alt="">
+							<div class="portfolio-info">
+								<h4>Point Light - Directional Light - Phong Material </h4>
+
+								<div class="portfolio-links">
+									<a href="render_images/Lights_Shading_Materials/Phong_Point_Direc.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="lights 5"><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/buildPhong.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filterDiv lights">
+						<div class="portfolio-wrap">
+							<img src="render_images/Lights_Shading_Materials/PointShadow_other.png" class="img-fluid"
+								alt="">
+							<div class="portfolio-info">
+								<h4> Point Light - Shadow</h4>
+
+								<div class="portfolio-links">
+									<a href="render_images/Lights_Shading_Materials/PointShadow_other.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="other 1"><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/buildHelloWorld_v1.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filterDiv anti-aliasing">
+						<div class="portfolio-wrap">
+							<img src="render_images/Tracing_AntiAliasing/AntiAliasing_Chapter14.png" class="img-fluid"
+								alt="">
+							<div class="portfolio-info">
+								<h4>Anti - Aliasing</h4>
+								<div class="portfolio-links">
+									<a href="render_images/Tracing_AntiAliasing/AntiAliasing_Chapter14.png"
+										data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i
+											class="bx bx-plus"></i></a>
+									<a href="https://github.com/CS-440-Fall-2021/p2-p2-accelerate/blob/main/raytracer/build/buildChapter14.cpp"
+										title="More Details"><i class="bx bx-link"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+			</div>
+		</section><!-- End Portfolio Section -->
+
+
+		<!-- ======= Build Files ======= -->
+		<section id="build" class="wrapper style1 align-left">
+			<div class="inner">
+				<h2 style="color: #918f8f; text-align: center;">Build Files</h2>
+
+				<section>
+					<div class="content" style="font-size: 15px;">
+
+						<dl>
+
+							<dt style="font-weight: 700;">buildLights_Shadows.cpp</dt>
+							<dd>
+								<p>This scene consists of a box, triangle and sphere of matte material with different
+									lights.</p>
+							</dd>
+							<dt style="font-weight: 700;">buildPhong.cpp</dt>
+							<dd>
+								<p>This scene consists of a box, triangle and sphere of phong material with different
+									lights.</p>
+							</dd>
+							<dt style="font-weight: 700;">buildHelloWorld_v1.cpp</dt>
+							<dd>
+								<p>This scene This scene was already provided, modified it; now consists of a sphere and
+									plane with different
+									lights.</p>
+							</dd>
+							<dt style="font-weight: 700;">buildChapter14.cpp</dt>
+							<dd>
+								<p>This scene was already provided, we modified it to take care of anti-aliasing.</p>
+							</dd>
+							<dt style="font-weight: 700;">reflectiveHelloWorld.cpp</dt>
+							<dd>
+								<p>This is the scene with reflective sphere and whitted tracer.</p>
+							</dd>
+
+							<dt style="font-weight: 700;">reflectiveChapter14.cpp</dt>
+							<dd>
+								<p>This scene was already provided, but we modified it with reflective materials and
+									whitted tracer.</p>
+							</dd>
+							<dt style="font-weight: 700;">buildMesh.cpp</dt>
+							<dd>
+								<p>This scene renders a monkey with primitives as triangles.</p>
+							</dd>
+						</dl>
+
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<!-- ======= Team Section ======= -->
+		<section id="team" class="team section-bg wrapper style1 align-center">
+			<div class="container" data-aos="fade-up">
+
+				<div class="section-title">
+					<h2 style="text-align: center; color: #918f8f;">Team</h2>
+
+					<br>
+					<br>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+						<div class="member">
+							<!-- <div class="member-img">
+								<img src="render_images/photographs/ammar.jpeg"
+									style="height: 200px; border-radius: 10px;" class=" img-fluid" alt="">
+
+							</div> -->
+
+							<div class="member-info">
+								<h6>Ammar</h6>
+								<span>CS 2022</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+						<div class="member">
+							<!-- <div class="member-img">
+								<img src="render_images/photographs/akeel.jpeg"
+									style="height: 200px; border-radius: 10px;" class=" img-fluid" alt="">
+
+							</div> -->
+							<div class="member-info">
+								<h6>Akeel Ather Medina</h6>
+								<span>CS 2023</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+						<div class="member">
+							<!-- <div class="member-img">
+								<img src="render_images/photographs/hafsa.jpeg "
+									style="height: 200px; border-radius: 10px;" class="img-fluid" alt="">
+
+							</div> -->
+							<div class="member-info">
+								<h6>Hafsa Irfan</h6>
+								<span>CS 2023</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+						<div class="member">
+							<!-- <div class="member-img">
+					<img src="render_images/photographs/jazib.png"
+						style="height: 200px; border-radius: 10px;" class=" img-fluid" alt="">
+
+				</div> -->
+							<div class="member-info">
+								<h6>Muhammad Jazib Bhatti</h6>
+								<span>CS 2022</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<br>
+			<br>
+			<br>
+		</section>
+		<!-- End Team Section -->
+
+
+
+		<section id="credits" class="wrapper style1 align-center">
+			<div class="inner">
+				<h2 style="color: #918f8f;">Credits</h2>
+				<div class="content">
+					<dl>
+						<dt>The textbook, "Raytracing from the Ground Up", by Kevin Suffern and the accompanying code
+							snippets.</dt>
+
+						<dt>Professor Waqar Saleem, the course instructor.</dt>
+						</dt>
+					</dl>
+
+				</div>
+		</section>
+
+
+
+
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!-- <script src="assets/js/main.js"></script> -->
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/this.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
+	<script
+		src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script> -->
+
+
+</body>
+
+</html>

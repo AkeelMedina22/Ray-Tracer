@@ -18,7 +18,3 @@ Command to run: g++ raytracer.cpp world/World.cpp world/ViewPlane.cpp utilities/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-This project was done in a group of 4, from which the octree was done by my partners, Ammar and Jazib. The rest was divided between me and Hafsa Irfan, who has hosted the website.
